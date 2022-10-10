@@ -1,0 +1,35 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+h1{
+    color: rgb(7, 7, 7);
+}
+
+body{
+ background-color: rgb(219, 164, 11);
+ opacity: 0,5;
+ 
+}
+
+header{
+    border-radius: 50px;
+    color: beige;
+}
+
+img{
+    max-width: 100%;
+    
+}
+.parrafo1{
+    text-align: justify;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 10;
+    margin-bottom: 50px;
+}
+h2{
+    text-align: center;
+    color: black;
+}
