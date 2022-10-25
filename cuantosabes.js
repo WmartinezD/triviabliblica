@@ -6,45 +6,75 @@ class Jugador {
 }
 
 
-const listaJugadores = [];
+const listaJugadores = [{
+        nombre: "walter",
+        edad: 29
+    },
+    {
+        nombre: "damian",
+        edad: 26
+    },
+    {
+        nombre: "matias",
+        edad: 24
+    },
+];
 
 const agregarJug = () => {
-    let nombre = prompt(" nombre de jugador");
-    let edad = parseInt(prompt(" edad de jugador"));
+    let nombre = document.getElementById("nombre").value;
+    let edad = parseInt(document.getElementById("edad").value);
 
 
     let jugadornuevo = new Jugador(nombre, edad);
 
     listaJugadores.push(jugadornuevo);
-    return listaJugadores;
+    localStorage.setItem("jugadores",JSON.stringify(listaJugadores));
+
 }
 
 agregarJug();
 
+listaJugadores.forEach(jugador => {
+    let contenedorjug = document.createElement("div");
+    contenedorjug.innerHTML = `
+    <p> ${jugador.nombre}<p>
+    <p>${jugador.edad} </p>`;
 
-
-
-listaJugadores.forEach((Jugadores) => {
-    console.log(`este jugador es ${Jugadores.nombre} y su edad ${Jugadores.edad}`)
+    document.querySelector("#jugadores").append(contenedorjug);
 });
 
 
 
+const parrafo = document.querySelector("#parrafo");
+const boton = document.getElementById("btn");
 
-let primerPregunta = prompt("¿ Cuál es el primer libro de la biblia?").toLowerCase();
+const escribir = () => {
+    let texto = prompt("fue dificil?");
+    parrafo.innerHTML = texto;
+
+}
+
+boton.addEventListener("click", escribir);
+
+
+
+let contedorpreguntas = document.createElement("div")
+let primerPregunta = prompt("¿ Cuál es el primer libro de la biblia?")
 if (primerPregunta == "genesis") {
     alert(" Tu respuesta es correcta");
 } else {
     alert(" Respuesta incorrecta");
 }
+localStorage.setItem(" pregunta", primerPregunta);
 
-
-let segundaPregunta = prompt("¿ Cuál es el nombre del primer hijo de abraham ?").toLowerCase();
+let segundaPregunta = prompt("¿ Cuál es el nombre del primer hijo de abraham ?");
 if (segundaPregunta == "ismael.") {
     alert(" Tu respuesta es correcta");
 } else {
     alert(" Respuesta incorrecta");
 }
+localStorage.setItem(" pregunta", segundaPregunta);
+
 
 let terceraPregunta = prompt("¿quién mato a golitat").toLowerCase();
 if ((terceraPregunta == "DAVID") || (terceraPregunta == "david")) {
@@ -52,8 +82,8 @@ if ((terceraPregunta == "DAVID") || (terceraPregunta == "david")) {
 } else {
     alert(" tu respuesta es incorrecta");
 }
-
-let cuartaPregunta = parseInt(prompt(" a que edad murio jesus")).toLowerCase();
+localStorage.setItem(" pregunta", terceraPregunta);
+let cuartaPregunta = parseInt(prompt(" a que edad murio jesus"))
 if (cuartaPregunta >= 0 && cuartaPregunta <= 20) {
     alert(" ups, no murio tan joven");
 } else if (cuartaPregunta >= 25 && cuartaPregunta <= 30) {
