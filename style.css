@@ -1,44 +1,109 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-h1{
-    color: rgb(7, 7, 7);
+
+
+h1 {
+    color: white;
 }
 
-body{
-    background-image: url(./img/puzzled-bearded-young-man-with-confused-expression-points-above-with-both-index-fingers-keeps-gaze-upwards-stands-bothered-wonders-latest-prices-wears-yellow-sweater-transparent-glasses.jpg);
- 
- 
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://i.ibb.co/WccPyXx/an-old-bible-on-wooden-table-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+
 }
 
-header{
-    border-radius: 50px;
+header {
     color: beige;
 }
 
-img{
-    max-width: 100%;
-   
-    
+
+
+img {
+    width: 100vw;
+    height: 75vh;
+
+
 }
-.parrafo1{
-    text-align: justify;
-    background-color: aliceblue;
-    color: black;
-   
-    width: 100%;
-    height: 250px;
+
+.parrafo1 {
+    color: white;
+
 }
-h2{
+
+h2 {
     text-align: center;
-    color: black;
+    color: white;
 }
 
-footer{
+footer {
+
+    color: white;
+}
+
+
+.JUGADORES {
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.cajas {
+    margin: 25px;
+    height: 200px;
+    color: aliceblue;
+
+}
+
+.cajas img {
+
+    width: 80px;
+    height: 80px;
+}
+
+.juego {
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    align-items: center;
+
+}
+
+#encabezado {
+    width: 80vw;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: aliceblue;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
 }
 
+.opcion {
+    width: 70vw;
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin: 10px;
 
+}
 
+.opcion:hover {
+    background: lightgray;
+    cursor: pointer;
+}

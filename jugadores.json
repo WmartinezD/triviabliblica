@@ -1,0 +1,60 @@
+[{
+        "id": 1,
+        "img": "https://i.ibb.co/By5nPST/studio-portrait-of-confident-brunet-man.jpg",
+        "nombre": "Marcos",
+        "usuario": "Pipo",
+        "puntaje": 100
+
+
+    },
+    {
+        "id": 2,
+
+        "img": "https://i.ibb.co/4MXyDR0/young-man-in-t-shirt-looking-at-front-while-standing-and-looking-happy.jpg",
+        "nombre": "Lucas",
+        "usuario": "Pepe",
+        "puntaje": 88
+    },
+
+    {
+        "id": 3,
+        "img": "https://i.ibb.co/FWWF2R9/emotional-and-people-concept-young-bearded-man-in-checkered-shirt-hipster-style-studio-shot-on-blue.jpg",
+        "nombre": "Pedro",
+        "usuario": " Peter",
+        "puntaje": 76
+    },
+
+    {
+        "id": 4,
+        "img": "https://i.ibb.co/pJVjf7m/young-woman-posing-in-red-blouse-and-looking-happy-front-view.jpg",
+        "nombre": " Susana",
+        "usuario": "Susi",
+        "puntaje": 72
+    },
+
+    {
+        "id": 5,
+        "img": "https://i.ibb.co/SXJjH4D/portrait-of-young-handsome-man-looking-confident-at-the-camera-with-smile-with-crossed-arms-and-hand.jpg",
+        "nombre": "Agustín",
+        "usuario": "Tino",
+        "puntaje": 68
+    },
+
+    {
+        "id": 6,
+        "img": "https://i.ibb.co/7rsPZk8/front-view-of-male-student-in-dark-t-shirt-wearing-yellow-backpack-holding-copybook-and-files-smilin.jpg",
+        "nombre": "Ariel",
+        "usuario": "Ari",
+        "puntaje": 50
+    },
+
+    {
+        "id": 7,
+        "img": "https://i.ibb.co/CJJr83J/confident-middle-aged-lady-looking-at-camera.jpg",
+        "nombre": "Lucia",
+        "usuario": "Luchy",
+        "puntaje": 30
+    }
+
+
+]
